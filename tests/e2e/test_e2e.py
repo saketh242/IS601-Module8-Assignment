@@ -58,7 +58,7 @@ def test_calculator_divide_by_zero():
             page.fill('#a', '10')
             page.fill('#b', '0')
             page.click('button:text("Divide")')
-            assert page.inner_text('#result') == 'Error: Cannot divide by zero💀'
+            assert page.inner_text('#result') == 'Error: Cannot divide by zero 💀'
             browser.close()
     finally:
         process.terminate()
