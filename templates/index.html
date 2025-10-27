@@ -11,7 +11,11 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            background-image: "../assets/funnyrobot.png"
+            background-image: url("/assets/funnyrobot.png");
+            background-size: cover;            
+            background-repeat: no-repeat;      
+            background-position: center center; 
+            background-attachment: fixed; 
         }
         
         .calculator {
@@ -29,7 +33,16 @@
         
         .result {
             margin-top: 10px;
+            font-size: 1.5rem;
+            font-style: Arial;
+            color: blue
+            color: #0ff;
             font-weight: bold;
+            text-shadow:
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 30px #00f,
+                0 0 40px #00f;
         }
     </style>
 </head>
