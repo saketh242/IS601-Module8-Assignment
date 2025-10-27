@@ -37,7 +37,7 @@ def test_multiply_api(client):
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
     
     assert response.json()['result'] == 50, f"Expected result 50, got {response.json()['result']}"
--
+
 
 def test_divide_api(client):
    
