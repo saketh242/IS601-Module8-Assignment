@@ -17,7 +17,7 @@ def wait_for_server(url, timeout=10):
     return False
 
 def test_hello_world():
-    process = subprocess.Popen(['python', '-m', 'uvicorn', 'app.main:app', '--port', '8000'])
+    process = subprocess.Popen(['python', '-m', 'uvicorn', 'main:app', '--port', '8000'])
     try:
         assert wait_for_server('http://localhost:8000'), 'Server did not start in time!'
         with sync_playwright() as p:
@@ -31,7 +31,7 @@ def test_hello_world():
         process.wait()
 
 def test_calculator_add():
-    process = subprocess.Popen(['python', '-m', 'uvicorn', 'app.main:app', '--port', '8000'])
+    process = subprocess.Popen(['python', '-m', 'uvicorn', 'main:app', '--port', '8000'])
     try:
         assert wait_for_server('http://localhost:8000'), 'Server did not start in time!'
         with sync_playwright() as p:
@@ -48,7 +48,7 @@ def test_calculator_add():
         process.wait()
 
 def test_calculator_divide_by_zero():
-    process = subprocess.Popen(['python', '-m', 'uvicorn', 'app.main:app', '--port', '8000'])
+    process = subprocess.Popen(['python', '-m', 'uvicorn', 'main:app', '--port', '8000'])
     try:
         assert wait_for_server('http://localhost:8000'), 'Server did not start in time!'
         with sync_playwright() as p:
