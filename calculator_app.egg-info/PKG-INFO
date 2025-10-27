@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: calculator-app
+Version: 0.1
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: jinja2
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: requests
+Requires-Dist: httpx
+Requires-Dist: pytest-asyncio
+Requires-Dist: playwright
+Dynamic: requires-dist
